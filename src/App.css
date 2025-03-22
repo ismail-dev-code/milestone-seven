@@ -18,6 +18,15 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+
+.Student{
+  padding: 12px;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  font-size: larger;
+  margin-top: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
