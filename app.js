@@ -17,11 +17,23 @@ const friends = ["abul", "babul", "kabul", "kamal", "hero"];
 
 // }
 
-const shobName = (a, b) => {
-  const sum = a + b;
-  return sum;
- 
-};
-const output = shobName(3456, 235);
+// const shobName = (a, b) => {
+//   const sum = a + b;
+//   return sum;
 
-console.log(output);
+// };
+// const output = shobName(3456, 235);
+
+// console.log(output);
+const name = {
+  name: "hero alom",
+  profession: "nachanachi",
+  age: 10,
+  friend: friends,
+};
+name.profession = "paglami"
+const result = name.friend[3];
+console.log(name);
+// for(i=0; i<result.length; i++){
+//     console.log(result[i]);
+// }
