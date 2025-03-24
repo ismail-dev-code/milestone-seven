@@ -3,7 +3,7 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
   .then((data) => console.log(data));
 
 const loadData = async () => {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = res.json();
   return data;
 };
