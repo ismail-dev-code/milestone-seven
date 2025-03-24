@@ -1,4 +1,7 @@
 import "./App.css";
+import Counter from "./counter";
+import Batsman from "./Batsman";
+import Users from "./Users";
 
 function App() {
   function handleClick() {
@@ -7,13 +10,17 @@ function App() {
   const handleClick3 = () => {
     alert("clicked 3");
   };
-  const handleClick5 = (sum)=>{
+  const handleClick5 = (sum) => {
     const newNum = sum + 5;
-    alert(newNum)
-  }
+    alert(newNum);
+  };
   return (
     <>
       <h1>Vite + React</h1>
+      <Users></Users>
+      <Counter></Counter>
+      <Batsman></Batsman>
+
       <button onClick={handleClick}>Click Me</button>
       <button
         onClick={function handleClick() {
@@ -23,8 +30,14 @@ function App() {
         Click Me2
       </button>
       <button onClick={handleClick3}>click me 3</button>
-      <button onClick={()=>{alert("im clicked 4")}}>click me 4</button>
-      <button onClick={()=>handleClick5(132)}>click me 5</button>
+      <button
+        onClick={() => {
+          alert("im clicked 4");
+        }}
+      >
+        click me 4
+      </button>
+      <button onClick={() => handleClick5(132)}>click me 5</button>
     </>
   );
 }
